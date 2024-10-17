@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>DOCUMENT </title>
+        <style>
+            .login{
+                border: 3px solid yellow;
+                max-width:max-content ;
+                padding: 20px 30px; 
+                margin: 10px auto;
+            }
+            input [type=button]{
+                display: block;
+                background-color: blanchedalmond;
+                margin: 0 auto;
+            }
+            </style>
+        </head>
+        <body>
+            <div class="login">
+                <form>
+                    <!--Email field-->
+                    <label for="email">Enter Your Email:</label>
+                    <input type="email"name="email"id="email"/>
+                    <br>
+                    <!--Password field-->
+                    <label for="password">Enter your password:</label>
+                    <input type="password"name="password"id="password"/>
+                    <br>
+                    <!--Radio Button-->
+                    <label>Choose your gender </label>
+                    <input type="radio"id="male"name="gender"value="male">
+                    <label for="male">Male</label>
+                    <input type="radio"id="female"name="gender"value="female">
+                    <label for="female">Female</label><br>
+                    <input type="button"value="LOGIN"/><br/>
+                    <!--Checkbox-->
+                    <label>Subscribe to newsletter </label><br/>
+                    <input type="checkbox"id="subscribe"name="subscibe"value="yes">
+                    <label for="subscribe">Yes</label><br/>
+                    <!--Dropdown List-->
+                    <label for="country">Select your country</label>
+                    <select id="country"name="country">
+                        <option value="USA">USA</option>
+                        <option value="Canasa">Canada</option>
+                        <option value="UK">UK</option>
+                        <option value="Australia">Australia</option>
+                    </select><br/>
+                    <!--Listbox-->
+                    <label for="languages">Select your favourite programming languages(Hold Ctrl or Cmd to select multiple): </label>
+                    <select id="languages"name="languages"multiple size="4">
+                        <option value="Python">Python</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="C++">C++</option>
+                        <option value="web design">Web Design</option>
+                    </select><br/>
+                    <!--URL Field-->
+                    <label for="search">Search:</label>
+                    <input type="search"id="search"name="search"><br/>
+                    <!--Submit and Reset buttons-->
+                    <input type="submit"value="Submit">
+                    <input type="reset"value="Reset"> <br/>
+
+
+
+
+                </form>
+            </body>
+</html>
