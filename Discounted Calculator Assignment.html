@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Discount Calculator</title>
+</head>
+<style>
+    .container {
+           
+            border: 4px solid blue;
+         
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>
+        Product Discount Calculator
+    </h1>
+    <label class="container">
+    <form>
+        <label for="product-description">Product description</label>
+        <input type="text"id="product-description" name="product description"></form><br>
+        <label for="list-price">List Price</label>
+        <input type="text"id="list-price" name="list-price"></form><br>
+        <label for="discount-percentage">Discount Percentage</label>
+        <input type="text"id="discount-percentage"name="discount-percentage"></form><br>
+        <label for="product-description">Product description</label>
+        <input type="text"id="product-description"name="product description"></form><br>%
+        <label for="discounted-amount">discounted amount</label>
+        <input type="text"id="discounted-amount"name="discounted-amount"></form><br>
+        <label for="discounted-price">Discounted Price</label>
+        <input type="text"id="discounted-price"name="discounted-price"></form><br>
+        <button type="button"onclick="calculatedDiscount()">Calculate</button>
+        <button type="reset">Reset</button>
+    
+    </form>
+    </label>
+    <script>
+        function calculateDiscount(){
+            var listPrice=parseFloat(document.getElementById("list-price").value);
+            var discountPercentage=parseFloat(document.getElementById("discount-percentage").value)/100;
+            var discountedAmount= listPrice * discountPercentage;
+            var discountedPrice= listPrice - discountedAmount;
+            document.getElementById("discounted-amount").value=discountedAmount.toFixed(2);
+            document.getElementById("discounted-price").value=discountedPrice.toFixed(2);    
+        }
+        </script>
+    
+</body>
+</html>
